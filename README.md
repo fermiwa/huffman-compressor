@@ -41,7 +41,7 @@ gcc main.c arvore.c lista.c codigo.c -o huffman
 ./huffman
 ```
 ### Passo 2: Compilar e Descomprimir
-```
+```bash
 # Compilar o descompressor
 gcc descompactar.c arvore.c lista.c codigo.c -o descompactar
 
@@ -49,7 +49,7 @@ gcc descompactar.c arvore.c lista.c codigo.c -o descompactar
 ./descompactar
 ```
 ### Comandos Úteis de Inspeção
-```
+```bash
 # Ver as primeiras linhas do arquivo em binário
 xxd -b compactado.huf | head -n 10
 
@@ -58,3 +58,4 @@ tail -c +2057 compactado.huf | xxd -b
 
 # Para garantir que o arquivo descompactado é 100% igual ao original
 diff -s teste.txt saida_final.txt
+```
