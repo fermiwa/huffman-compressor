@@ -22,10 +22,10 @@ O projeto utiliza estruturas de dados clássicas para realizar a tarefa:
 - `teste.txt`: Arquivo para usar de teste (pode ser modificado caso queira)
 
 ## 🧠 Conceitos Aplicados
-- Árvores Binárias: Navegação de caminhos (0 para esquerda, 1 para direita).
-- Lista de Prioridade: Ordenação dinâmica de frequências.
-- Bitwise Operations: Manipulação de memória em nível de bit para compressão real.
-- Backtracking: Recursão para geração de dicionário na árvore.
+- **Árvores Binárias**: Navegação de caminhos (0 para esquerda, 1 para direita).
+- **Lista de Prioridade**: Ordenação dinâmica de frequências.
+- **Bitwise Operations**: Manipulação de memória em nível de bit para compressão real.
+- **Backtracking**: Recursão para geração de dicionário na árvore.
 
 ## 💻 Como Executar
 
@@ -39,16 +39,17 @@ gcc main.c arvore.c lista.c codigo.c -o huffman
 
 # Executar a compressão (gera o arquivo compactado.huf)
 ./huffman
-
+```
 ### Passo 2: Compilar e Descomprimir
+```
 # Compilar o descompressor
 gcc descompactar.c arvore.c lista.c codigo.c -o descompactar
 
 # Executar a descompressão (gera o arquivo saida_final.txt)
 ./descompactar
-
+```
 ### Comandos Úteis de Inspeção
-
+```
 # Ver as primeiras linhas do arquivo em binário
 xxd -b compactado.huf | head -n 10
 
